@@ -14,13 +14,12 @@ import re
 
 def ingest_data():
 
-    with open('clusters_report.txt') as report:
-        fila = report.readlines()
+    with open('clusters_report.txt') as txt:
+        fila = txt.readlines()
 
     clusters = []
     cluster = [0, 0, 0, '']
     fila = fila[4:]
-
 
     for i in fila:
         
